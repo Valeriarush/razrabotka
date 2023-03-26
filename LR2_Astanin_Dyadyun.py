@@ -34,23 +34,22 @@ while num != 0:
     num = float(input('Введите число: '))
 print('Сумма: ', g)
 print('Количество: ', q)
+##Задание 2.15
+s = input('Введите текстовую строку: ')
 
-##Задание 2
-stroka = str(input('Введите строку'))
-StrokaFuture = stroka.split()
-print(sum(map(lambda x:
-              x.startswith('m') + x.startswith('M'), StrokaFuture)))
+print('Количество символов "t" в строке равно', s.count('t'))
+print (s)
+##Задание 3.15
+a = []
+b = int (input("Введите кол-во элементов массива: "))
+for i in range(b):
+    a.append(int(input("Введите число: ")))
+    
+print ("Числа меньше 10:")
+for i in range(len(a)):
+    if a[i] < 10:
+        print(a[i])
+    if i % 2 == 0:
+        a[i] *=2
 
-
-##Задание 3
-A = [int(x) for x in input().split()]
-print(A)
-print(max(A))
-A.reverse()
-print(A)
-avg = sum(A) / len(A)
-print(avg)
-print([avg if x == 0 else x for x in A])
-
-
-
+print(a)
